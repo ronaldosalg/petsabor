@@ -1,0 +1,124 @@
+
+#carousel {
+  position: relative;
+  height: 647px;
+  top: 50%;
+  transform: translateY(-7%);
+  overflow: hidden;
+  z-index: -1;
+}
+#carousel div {
+  position: absolute;
+  transition: transform 1s, left 1s, opacity 1s, z-index 0s;
+  opacity: 1;
+}
+#carousel div img {
+  width: 400px;
+  transition: width 1s;
+}
+#carousel div.hideLeft {
+  left: 0%;
+  opacity: 0;
+  transform: translateY(50%) translateX(-50%);
+}
+#carousel div.hideLeft img {
+  width: 200px;
+}
+#carousel div.hideRight {
+  left: 100%;
+  opacity: 0;
+  transform: translateY(50%) translateX(-50%);
+}
+#carousel div.hideRight img {
+  width: 200px;
+}
+#carousel div.prev {
+  z-index: 5;
+  left: 30%;
+  transform: translateY(50px) translateX(-50%);
+}
+#carousel div.prev img {
+  width: 300px;
+}
+#carousel div.prevLeftSecond {
+  z-index: 4;
+  left: 15%;
+  transform: translateY(50%) translateX(-50%);
+  opacity: 0.7;
+}
+#carousel div.prevLeftSecond img {
+  width: 200px;
+}
+#carousel div.selected {
+  z-index: 10;
+  left: 50%;
+  transform: translateY(0px) translateX(-50%);
+}
+#carousel div.next {
+  z-index: 5;
+  left: 70%;
+  transform: translateY(50px) translateX(-50%);
+}
+#carousel div.next img {
+  width: 300px;
+}
+#carousel div.nextRightSecond {
+  z-index: 4;
+  left: 85%;
+  transform: translateY(50%) translateX(-50%);
+  opacity: 0.7;
+}
+#carousel div.nextRightSecond img {
+  width: 200px;
+}
+
+.buttons {
+
+    /* left: 50%; */
+    /* transform: translateX(-50%); */
+    bottom: 10px;
+    margin-left: 47%;
+}
+
+
+#beneficosAN{
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+
+#beneficosAN  button {
+    background: #d2344d;
+    border: 0;
+    padding: 10px 16px;
+    color: #fff;
+    transition: 0.4s;
+    cursor: pointer;
+    border-radius: 33px;
+    /* width: 141px; */
+}
+
+#beneficiosAN < #carousel{
+  z-index: -1;
+}
+@media (max-width: 375px) {
+#beneficosAN .seletores{
+    position: absolute;
+    width: 100%;
+    padding-top: 64px;
+}
+  #beneficosAN .prev{
+background-color: #ffffff00;
+    font-size: 34px;
+    margin-right: 6em;
+    margin-left: 5px !important;
+    color: rgba(255, 255, 255, 0.55);
+    padding: 0px 16px 0px 12px !important;
+  }
+  #beneficosAN .next{
+    background-color: #ffffff00;
+    font-size: 34px;
+        color: rgba(255, 255, 255, 0.55);
+    padding: 0px 13px 0px 15px !important;
+  }
+
+}
